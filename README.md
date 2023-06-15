@@ -3,8 +3,10 @@
 ## 适用于Tut的自动浴室预约系统（可修改为Tust）
 
 * 环境：Linux、Apache2或nginx、PHP 、MariaDB、Python3
+* Python库: pymysql
+* PHP 插件: mysqli
 * 数据库名称：bathroom，用户名：bath，密码：bathroom
-  数据库各表定义：
+* 数据库各表定义：
 
   * bookRooms：浴室信息表
     | 列名称 | 作用              |
