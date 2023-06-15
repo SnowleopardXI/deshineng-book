@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>登记表单</title>
+	<style>
+		.a {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		table {
+			border: 1px solid #13c5b0;
+			text-align: center;
+		}
+
+		table th {
+			background-color: rgb(20, 127, 151);
+			border: 1px solid #000000;
+		}
+
+		table td {
+			border: 1px solid #1ba5a1;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<script>
+	function room()
+	{
+		var select = document.getElementById("gender");
+		var value = select.value;
+		
+		var timeId = document.getElementById("time");
+		switch(value)
+		{
+			case "男":
+			timeId.innerHTML=
+			  '<option value="0">请选择</option>'+
+			  '<option value="12:00-12:15">12:00-12:15</option>'+
+			  '<option value="12:15-12:30">12:15-12:30</option>'+
+			  '<option value="12:30-12:45">12:30-12:45</option>'+
+			  '<option value="12:45-13:00">12:45-13:00</option>'+
+			  '<option value="13:00-13:15">13:00-13:15</option>'+
+			  '<option value="13:15-13:30">13:15-13:30</option>'+
+			  '<option value="13:30-13:45">13:30-13:45</option>'+
+			  '<option value="13:45-14:00">13:45-14:00</option>'+
+			  '<option value="14:00-14:15">14:00-14:15</option>'+
+			  '<option value="14:15-14:30">14:15-14:30</option>'+
+			  '<option value="14:30-14:45">14:30-14:45</option>'+
+			  '<option value="14:45-15:00">14:45-15:00</option>'+
+			  '<option value="15:00-15:15">15:00-15:15</option>'+
+			  '<option value="15:15-15:30">15:15-15:30</option>'+
+			  '<option value="15:30-15:45">15:30-15:45</option>'+
+			  '<option value="15:45-16:00">15:45-16:00</option>'+
+			  '<option value="16:00-16:15">16:00-16:15</option>'+
+			  '<option value="16:15-16:30">16:15-16:30</option>'+
+			  '<option value="16:30-16:45">16:30-16:45</option>'+
+			  '<option value="16:45-17:00">16:45-17:00</option>'+
+			  '<option value="17:00-17:15">17:00-17:15</option>'+
+			  '<option value="17:15-17:30">17:15-17:30</option>'+
+			  '<option value="17:30-17:45">17:30-17:45</option>'+
+			  '<option value="17:45-18:00">17:45-18:00</option>'+
+			  '<option value="18:00-18:15">18:00-18:15</option>'+
+			  '<option value="18:15-18:30">18:15-18:30</option>'+
+			  '<option value="18:30-18:45">18:30-18:45</option>'+
+			  '<option value="18:45-19:00">18:45-19:00</option>'+
+			  '<option value="19:00-19:15">19:00-19:15</option>'+
+			  '<option value="19:15-19:30">19:15-19:30</option>'+
+			  '<option value="19:30-19:45">19:30-19:45</option>'+
+			  '<option value="19:45-20:00">19:45-20:00</option>'+
+			  '<option value="20:00-20:15">20:00-20:15</option>'+
+			  '<option value="20:15-20:30">20:15-20:30</option>'+
+			  '<option value="20:30-20:45">20:30-20:45</option>'+
+			  '<option value="20:45-21:00">20:45-21:00</option>'+
+			  '<option value="21:00-21:15">21:00-21:15</option>'+
+			  '<option value="21:15-21:30">21:15-21:30</option>'+
+			  '<option value="21:30-21:45">21:30-21:45</option>'+
+			  '<option value="21:45-22:00">21:45-22:00</option>'+
+			  '<option value="22:00-22:15">22:00-22:15</option>'+
+			  '<option value="22:15-22:30">22:15-22:30</option>';
+			  break;
+			case "女":
+			  timeId.innerHTML=
+			  '<option value="0">请选择</option>'+
+			  '<option value="12:00-12:20">12:00-12:20</option>'+
+			  '<option value="12:20-12:40">12:20-12:40</option>'+
+			  '<option value="12:40-13:00">12:40-13:00</option>'+
+			  '<option value="13:00-13:20">13:00-13:20</option>'+
+			  '<option value="13:20-13:40">13:20-13:40</option>'+
+			  '<option value="13:40-14:00">13:40-14:00</option>'+
+			  '<option value="14:00-14:20">14:00-14:20</option>'+
+			  '<option value="14:20-14:40">14:20-14:40</option>'+
+			  '<option value="14:40-15:00">14:40-15:00</option>'+
+			  '<option value="15:00-15:20">15:00-15:20</option>'+
+			  '<option value="15:20-15:40">15:20-15:40</option>'+
+			  '<option value="15:40-16:00">15:40-16:00</option>'+
+			  '<option value="16:00-16:20">16:00-16:20</option>'+
+			  '<option value="16:20-16:40">16:20-16:40</option>'+
+			  '<option value="16:40-17:00">16:40-17:00</option>'+
+			  '<option value="17:00-17:20">17:00-17:20</option>'+
+			  '<option value="17:20-17:40">17:20-17:40</option>'+
+			  '<option value="17:40-18:00">17:40-18:00</option>'+
+			  '<option value="18:00-18:20">18:00-18:20</option>'+
+			  '<option value="18:20-18:40">18:20-18:40</option>'+
+			  '<option value="18:40-19:00">18:40-19:00</option>'+
+			  '<option value="19:00-19:20">19:00-19:20</option>'+
+			  '<option value="19:20-19:40">19:20-19:40</option>'+
+			  '<option value="19:40-20:00">19:40-20:00</option>'+
+			  '<option value="20:00-20:20">20:00-20:20</option>'+
+			  '<option value="20:20-20:40">20:20-20:40</option>'+
+			  '<option value="20:40-21:00">20:40-21:00</option>'+
+			  '<option value="21:00-21:20">21:00-21:20</option>'+
+			  '<option value="21:20-21:40">21:20-21:40</option>'+
+			  '<option value="21:40-22:00">21:40-22:00</option>'+
+			  '<option value="22:00-22:15">22:00-22:15</option>'+
+			  '<option value="22:15-22:30">22:15-22:30</option>';
+			  break;
+			  case "0":
+				timeId.innerHTML = '<option value="">请选择</option>';
+				break;
+		  }
+		}
+		</script>
+	<div class="a">
+		<form action="ver.php" method="post">
+			<table>
+				<tr>
+					<th colspan="2">用户登录表单</th>
+				</tr>
+				<tr>
+					<td>用户名：</td>
+					<td><input type="text" name="user" required></td>
+				</tr>
+				<tr>
+					<td>密码：</td>
+					<td><input type="password" name="pass" required></td>
+				</tr>
+				<tr>
+					<td>性别</td>
+					<td>
+						<select id="gender" name="gender" onchange="room()">
+							<option value="0">请选择</option>
+							<option value="男">男</option>
+							<option value="女">女</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>地区</td>
+					<td>
+						<select name="place">
+							<option value="南区">南区</option>
+							<option value="北区">北区</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>时间段</td>
+					<td>
+						<select name="time" id="time">
+							<option value="">请选择</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>otp:</td>
+					<td><input type="text" name="ver" required></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" name="submit" value="登录" /><input type="reset" name=“Reset”>
+					</td>
+				</tr>
+			</table>
+			</form>
+	</div>
+	<a href="./check.htm">查看预约状态</a>
+</body>
+</html>
