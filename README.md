@@ -6,18 +6,21 @@
 * 数据库名称：bathroom，用户名：bath，密码：bathroom
   数据库各表定义：
 
-  * bookRooms：浴室信息表| 列名称 | 作用              |
+  * bookRooms：浴室信息表
+    | 列名称 | 作用              |
     | ------ | ----------------- |
     | gender | 性别              |
     | place  | 地点（南区/北区） |
     | time   | 浴室时间段        |
     | bookId | 浴室码            |
-  * Catchphase：catchphase信息表| 列名称     | 作用       |
+  * Catchphase：catchphase信息表
+    | 列名称     | 作用       |
     | ---------- | ---------- |
     | id         | id         |
     | updateTime | 更新时间   |
     | key        | catchphase |
-  * orderUserList：预约信息表| 列名称       | 作用                   |
+  * orderUserList：预约信息表
+    | 列名称       | 作用                   |
     | ------------ | ---------------------- |
     | realName     | 储存真实名称，便于查询 |
     | username     | 登录用户名             |
